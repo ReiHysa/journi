@@ -1,2 +1,18 @@
 # journi
-A social media where people can share their trips.
+A social media where people can share their trips with an online community which incorpates maps and ratings. This app was heavily inspired by other
+social media platforms and as a third project, I wanted to utilise lots of the essential things used in these social media platforms.
+
+Having read Coders by Clive Thompson, I was inspired to create something which circulated around social media with a strong influence centered around
+the feed. As the book goes into depth about the creation of the feed and the affects that this had among other organisations, I wanted to have a go
+in creatign my own feed which would incorporate a map into it. The feed works well, and is influenced by your friends posts and is ordered by the date
+it was posted. However, having read the book I would want to develop my own system in organising a way to display the feed based on the users profile and their likes/needs. 
+
+For the creation of Journi, we only had 1 Week to create an app which incorporated both front and backend data. Using MongoDb, backend data was created which gave ownership to account posts and created a following system. Having to figure out much of the methods needed to do this ourselves, we were met with lots of struggles but managed to perservere and fix many of the problems with the code. The final product had many functions and worked very well, but we had prepared our backend to accept other forms of requests which we did not end up having enough time to incorporate but this did not stop us from going past our MVP and creating a working, functional social media platform. 
+
+A challenge with the code created was the merging of our own API data and other API data. We used mapBox to create our own map which had points and locations attatched to it based on the locations put within the posts. This created almost a pinning map system which was the main focus when creating this platform. How we did this was by storing all the locations within a userprofile and gathering that data and pushing it through the pinning system within mapbox. Although in theory it may feel simple, there were many errors that this led to such as the pinpoints being set in a different location. 
+
+We really wanted to make the platform feel interactive rather then just a browsing platform so we decided to include this interactive element through the movement from mapbox when selecting the location. We also wanted to make sure that the pages weren't just reloading to get it working so I introduced a few ways in reloading the data to affect the page. A way that we did this was by manually altering the page to include the new piece of information that was just put. When the page is refreshed it will gather that data back and show the information from the database. Almost making a 'fake' submission example such as the use of following and unfollowing.
+
+I really wanted to ensure that the main premise of the website was met. This being sharing your trips with the people you care about and bringing interactivity between the real and meta. I did this by ensuring that you can choose who you share this information with by following specific people. However, if I had more time I would love to have included a privacy setting which when set as on, forces the other user to accept a follow first beforehand. Making the website as technical as possible in such a short time had many challenges but I felt as if many of these hurdles where overcome and a highly functioning page was brought about. 
+
+In future projects, I would love to incorporate a messaging service. I felt as if that was a big part of the website in which we did not have time to include and would love to learn different methods in creating messages that are stored between two parties. Watch out for any of my later projects which include this function!
